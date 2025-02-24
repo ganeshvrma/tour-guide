@@ -8,14 +8,14 @@ const Cards = ({id,name,info,image,price,removeTour }) => {
     }
   
   return ( 
-    <div  className='w-[40vh] h-[100vh] flex flex-col border-2 p-4 '>
+    <div   className='w-[400px] h-[max-content] flex flex-col border-2 p-[1rem] flex-wrap m-[1rem] rounded-[10px] items-center '>
       <div className=''>
-      <img className='w-full h-[40vh] object-cover ' src={image} alt="" />
+      <img className='w-[300px] h-[40vh] object-cover aspect-(1/1) ' src={image} alt="" />
       </div>
          
         <div className='font-semibold w-full flex flex-col'>
-          <h3>₹{price}</h3>
-          <h2 className=''>{name}</h2>
+          <h3 className='text-[1.3rem]  text-[#1faa59]'>₹{price}</h3>
+          <h2 className='text-[1.5rem]'>{name}</h2>
         </div>
         <div className='m-3'>
            {description}

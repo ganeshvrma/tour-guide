@@ -13,9 +13,9 @@ function App() {
   };
    if(tours.length === 0){
     return (
-     < div>
-      <h2>No Tours left</h2>
-      <button onClick={() => setTours(Data)}>Refresh</button>
+     < div className="h-[100vh] flex justify-center items-center flex-col">
+      <h1 className="font-semibold">No Tours left</h1>
+      <button className="mt-5 py-2 px-20 border-2 border-brown  rounded-2xl hover:bg-white color:#000 transition-all .2s" onClick={() => setTours(Data)}>Refresh</button>
       </div>
     );
     

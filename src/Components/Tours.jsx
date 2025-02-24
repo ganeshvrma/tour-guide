@@ -2,11 +2,11 @@ import React from "react";
 import Cards from "./Cards";
 const Tours = ({ tours,removeTour }) => {
   return (
-    <div className="flex flex-col ">
-      <div className=" w-[20vw] font-bold text-3xl self-center border-dashed  border-5 pl-5 m-4" >
-        <h1 className=""> Plan with Ganesh</h1>
+    <div className="flex flex-col flex-flow-wrap justify-center items-center ">
+      <div className="font-bold  w-[40vw] border-dashed  border-5 border-[#0111a0] rounded-2xl px-[5vw] py-[1vh] m-[5vh]" >
+        <h1 className="  text-[3rem]"> Plan with Ganesh</h1>
       </div>
-      <div className="justify-center w-[50vw] flex gap-10 flex-wrap">
+      <div className="justify-center flex gap-10 flex-wrap max-w-[100vw] m-[0-auto] ">
         {
         tours.map((tours) => (
           <Cards key={tours.id} {...tours} removeTour={removeTour} />
